@@ -54,8 +54,10 @@ button[data-start]:disabled {
 }
 
 .label {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #777;
-    margin-top: 4px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
 }
