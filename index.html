@@ -1,105 +1,14 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript Projects</title>
-    <style>
-      .nav {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-bottom: 30px;
-      }
-      .nav button {
-        padding: 10px 20px;
-        border: none;
-        background-color: #007bff;
-        color: white;
-        border-radius: 6px;
-        cursor: pointer;
-      }
-      .section {
-        display: none;
-      }
-      .section.active {
-        display: block;
-      }
-    </style>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/style-CJ-wmeN9.js"></script>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-BbSUbo7J.js"></script>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/1-timer-C2l68ZtV.js"></script>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/2-snackbar-DyOfSBDn.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/style-C_brP5QJ.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-C1gPI-5C.css">
+    <title>Document</title>
   </head>
   <body>
     <div class="nav">
-      <button id="show-timer">Таймер</button>
-      <button id="show-snackbar">Проміс</button>
+      <a href="./1-timer.html">Таймер</a>
+      <a href="./2-snackbar.html">Проміс</a>
     </div>
-
-    <div id="timer-section" class="section active">
-      <!-- Вставляємо HTML розмітку з таймера -->
-      <input type="text" id="datetime-picker" />
-      <button type="button" data-start disabled>Start</button>
-
-      <div class="timer">
-        <div class="field">
-          <span class="value" data-days>00</span><span class="label">Days</span>
-        </div>
-        <div class="field">
-          <span class="value" data-hours>00</span
-          ><span class="label">Hours</span>
-        </div>
-        <div class="field">
-          <span class="value" data-minutes>00</span
-          ><span class="label">Minutes</span>
-        </div>
-        <div class="field">
-          <span class="value" data-seconds>00</span
-          ><span class="label">Seconds</span>
-        </div>
-      </div>
-    </div>
-
-    <div id="snackbar-section" class="section">
-      <!-- Вставляємо HTML розмітку з генератора промісів -->
-      <form class="form">
-        <label>Delay (ms)<input type="number" name="delay" required /></label>
-        <fieldset>
-          <legend>State</legend>
-          <label
-            ><input type="radio" name="state" value="fulfilled" required />
-            Fulfilled</label
-          >
-          <label
-            ><input type="radio" name="state" value="rejected" required />
-            Rejected</label
-          >
-        </fieldset>
-        <button type="submit">Create notification</button>
-      </form>
-    </div>
-
-    <!-- JS-модулі -->
-
-    <!-- Перемикання між секціями -->
-    <script>
-      const timerBtn = document.getElementById('show-timer');
-      const snackbarBtn = document.getElementById('show-snackbar');
-      const timerSection = document.getElementById('timer-section');
-      const snackbarSection = document.getElementById('snackbar-section');
-
-      timerBtn.addEventListener('click', () => {
-        timerSection.classList.add('active');
-        snackbarSection.classList.remove('active');
-      });
-
-      snackbarBtn.addEventListener('click', () => {
-        snackbarSection.classList.add('active');
-        timerSection.classList.remove('active');
-      });
-    </script>
   </body>
 </html>
